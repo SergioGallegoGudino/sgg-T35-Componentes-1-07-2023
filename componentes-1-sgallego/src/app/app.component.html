@@ -1,0 +1,21 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h2>Alta cliente</h2>
+<!-- Creamos un formulario que guarde cada campo y, al darle a Guardar, llame a una funcion que almacene cada campo en un objeto. A su vez guardará este objeto en una array-->
+<form class="stForm" #formulario="ngForm">
+  Nombre: <input type="text" name="nombre" ngModel>
+  CIF: <input type="text" name="cif" ngModel>
+  Direccion: <input type="text" name="direccion" ngModel>
+  Grupo:<select name="grupo" id="" ngModel>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+        </select>
+  <input type="submit" (click)="guardar(formulario.value)" value="Guardar" placeholder="">
+</form>
+<app-datos [tabla] = "tabla"></app-datos>
