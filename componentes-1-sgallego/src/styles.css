@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+/* General */
+
+body {
+    margin: 0;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formClientes {
+    width: 25vw;
+    height: 60vh;
+}
+
+@media (max-width: 768px) {
+    .calculadora {
+    width: 80vw;
+    }
+}
+
+/* Formulario */
 
 .stForm{
     width: 25vw;
